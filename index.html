@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Recetas de Cocina</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <img src="img/icon/eating.png" alt="logo" class="img-logo">
+            <h1 class="nav-logo">Easy Cook</h1>
+            <label for="menu" class="nav-label">
+                <img src="img/icon/hamburguesa.png" alt="menu-hamburguesa" class="nav-img">
+            </label>
+            <input type="checkbox" name="menu" id="menu" class="nav-input">
+            <div class="nav-menu">
+                <a href="index.html" class="nav-item">Inicio</a>
+                <a href="pages/nosotros.html" class="nav-item">Nosotros</a>
+                <a href="pages/recetas.html" class="nav-item">Recetas</a>
+                <a href="pages/blog.html" class="nav-item">Blog</a>
+                <a href="pages/contacto.html" class="nav-item">Contacto</a>
+                <a href="pages/suscribete.html" class="nav-item"><button class="subscription">
+                    <span>Suscribete -></button></a>
+            </div>
+        </div>
+    </nav>
+    <section class="carrucel">
+        
+      <!--   <div class="carrucel-contenido">
+            <h2 class="carrucel-titulo">Sushi Uramaki</h2>
+            <p>No te pierdas estas prácticas recetas para consentir a la familia</p>
+            <li>Porción: 4 Personas</li>
+            <li>Tiempo: 30 min</li> -->
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/sushi.jpg" class="d-block w-100" alt="...">
+                    <div class="carrucel-contenido carousel-caption d-none d-md-block">
+                        <h2 class="carrucel-titulo">Sushi Uramaki</h2>
+                        <p>No te pierdas estas prácticas recetas para consentir a la familia</p>
+                        <li>Porción: 4 Personas</li>
+                        <li>Tiempo: 30 min</li>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/meat.jpg" class="d-block w-100" alt="...">
+                    <div class="carrucel-contenido carousel-caption d-none d-md-block">
+                        <h2 class="carrucel-titulo">Sushi Uramaki</h2>
+                        <p>No te pierdas estas prácticas recetas para consentir a la familia</p>
+                        <li>Porción: 4 Personas</li>
+                        <li>Tiempo: 30 min</li>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/past.jpg" class="d-block w-100" alt="...">
+                    <div class="carrucel-contenido carousel-caption d-none d-md-block">
+                        <h2 class="carrucel-titulo">Sushi Uramaki</h2>
+                        <p>No te pierdas estas prácticas recetas para consentir a la familia</p>
+                        <li>Porción: 4 Personas</li>
+                        <li>Tiempo: 30 min</li>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+        </div>
+    </section>
+    <article class="categoria">
+        <h2 class="categoria-titulo">Elije una categoría</h2>
+        <section class="tipo">
+            <div class="tipo-receta"><img src="img/icon/meat.png" alt="meat" class="icon-saucer">
+                    <h2 class="titulo-receta">Carnes</h2>
+            </div>
+            <div class="tipo-receta"><img src="img/icon/seafood.png" alt="seafood" class="icon-saucer">
+                <h2 class="titulo-receta">Mariscos</h2>
+            </div>
+            <div class="tipo-receta"><img src="img/icon/soup.png" alt="soup" class="icon-saucer">
+                <h2 class="titulo-receta">Sopas</h2>
+            </div>
+            <div class="tipo-receta"><img src="img/icon/sparkling-water.png" alt="sparkling-water"
+                    class="icon-saucer">
+                <h2 class="titulo-receta">Bebidas</h2>
+            </div>
+            <div class="tipo-receta"><img src="img/icon/salad.png" alt="salad" class="icon-saucer">
+                <h2 class="titulo-receta">Ensaladas</h2>
+            </div>
+        </section>
+    </article>
+    <article class="mejores">
+        <h2 class="mejores-titulo">Soprende a tú familia con los mejore platillos</h2>
+        <p class="mejores-parrafo">Elige las mejores recetas</p>
+        <section class="mejores-recetas">
+            <div class="saucer-1 box-saucer ancho">1</div>
+            <div class="saucer-2 box-saucer">2</div>
+            <div class="saucer-3 box-saucer alto">3</div>
+            <div class="saucer-4 box-saucer">4</div>
+            <div class="saucer-5 box-saucer">5</div>
+            <div class="saucer-6 box-saucer ancho">6</div>
+            <div class="saucer-7 box-saucer">7</div>
+            <div class="saucer-8 box-saucer alto">8</div>
+            <div class="saucer-9 box-saucer ">9</div>
+            <div class="saucer-10 box-saucer ancho">10</div>
+            <div class="saucer-11 box-saucer ">11</div>
+        </section>
+    </article>
+    <footer class="footer">
+        <div class="footer-contenido">
+            <img src="img/icon/eating.png" alt="logo" class="footer-logo">
+            <h2 class="footer-namelogo">Easy Cook</h2>
+        </div>
+        <div class="footer-redes">
+            <i class='bx bxl-facebook bx-sm bx-border'></i>
+            <i class='bx bxl-instagram bx-sm bx-border'></i>
+            <i class='bx bxl-twitter bx-sm bx-border'></i>
+            <i class='bx bxl-tiktok bx-sm bx-border'></i>
+            <i class='bx bxl-youtube bx-sm bx-border'></i>
+        </div>
+        <div class="footer-contenido">
+            <p class="copy">Easy cook &#169 2022 | Javier Paulino</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
