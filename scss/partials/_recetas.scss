@@ -1,0 +1,28 @@
+.recetas-boton {
+    width: 10%;
+    height: 30px;
+    margin-top: 40px;
+}
+.recetas-lista{
+    list-style: none;
+    font-size: 20px;
+    margin-right: 10em;
+}
+.paginacion{
+    justify-content: center;
+    margin-left: 90px;
+}
+
+.recetas-boton:hover {
+    background-color: #99C922;
+    cursor: pointer;
+}
+.recetas-img{
+    width: 50%;
+    border-radius: 100%;
+    margin-top: 50px;
+}
+
+.item6 {
+    background-image: url("../img/fongeneral.jpg");
+}

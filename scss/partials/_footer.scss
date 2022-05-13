@@ -1,0 +1,24 @@
+.footer {
+    background-color: map-get($map: $palette, $key:'green');
+    padding: 0.5px;
+    &-contenido {
+        color: map-get($map: $palette, $key:'black' );
+        justify-content: center;
+        text-align: center;
+    }
+    &-logo {
+        max-width: 5%;
+        margin-top: 30px;
+    }
+    &-redes {
+        display: flex;
+        justify-content: center;
+    }
+    &-redes i:hover {
+        color: map-get($map: $palette, $key:'white');
+        cursor: pointer;
+    }
+}
+
+
+

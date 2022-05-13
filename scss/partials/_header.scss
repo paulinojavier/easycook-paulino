@@ -1,0 +1,87 @@
+@import "./abstracts/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: map-get($map:$palette, $key:'white' );
+    height: 80px;
+    color: map-get($map:$palette, $key:'black' );
+    &-container {
+        display: flex;
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-logo {
+        width: 30px;
+        height: 30px;
+    }
+    &-titulo{
+        font-size: 1.5em;
+        font-weight: 900;
+        margin-right: 17em;
+    }
+    &-menu {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 3em;
+    }
+    &-item {
+        text-decoration: none;
+        font-family: 'Biryani', sans-serif;
+        color: map-get($map:$palette, $key:'ligthblack' );
+    }
+    &-item:hover {
+        color:map-get($map:$palette, $key:'green' );;
+        text-decoration:underline;
+    }
+    &-label,
+    &-input {
+    display: none;
+  }
+  &-subscription {
+    width: 100%;
+    height: 3em;
+    padding: 6px;
+    margin-top: -15px;
+    background-color: map-get($map:$palette, $key:'green' );;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    color: map-get($map:$palette, $key:'white' );;
+    border: none;
+    cursor: pointer;
+    transition: .6s ease all;
+    position: relative;
+    overflow: hidden;
+}
+
+&-subscription:hover{
+    border: 2px solid map-get($map:$palette, $key:'black' );;
+    background: map-get($map:$palette, $key:'green' );;
+    color:map-get($map:$palette, $key:'white' );;
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

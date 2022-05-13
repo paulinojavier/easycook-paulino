@@ -1,0 +1,162 @@
+.item1 {
+    background-image: url('../img/fongeneral.jpg');
+}
+
+.item3 {
+    background-image: url('../img/personosotro.jpg');
+}
+
+.nosotros-titulo {
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.nosotros-lista {
+    list-style: none;
+    font-size: 20px;
+}
+
+.banner-chef{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: map-get($map: $palette, $key:'bigblack');
+    position: relative;
+    &-chef::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        clip-path: inset(47% 0 0 0);
+        z-index: -1;
+        height: 100%;
+      }      
+}
+
+.container-chef{
+   max-width: 950px;
+   width: 100%;
+   overflow: hidden;
+   padding: 80px 0;
+   .main-card{
+    width: 200%;
+    display: flex;
+    justify-content: space-evenly;
+    transition: all 1s ease;
+ }
+}
+
+#two:checked ~ .main-card{
+    margin-left: -100%;
+}
+
+.main-card .cards{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0 20px;
+    flex-wrap: wrap;
+    .card{
+        background:map-get($map: $palette, $key:'white');
+        width: calc(100% / 3 - 10px);
+        padding: 30px;
+        border-radius: 24px;
+        transition: all 0.4s ease;
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .img{
+                height: 130px;
+                width: 130px;
+                margin-bottom: 14px;
+                background: map-get($map: $palette, $key:'green');
+                padding: 3px;
+                border-radius: 50%;
+            }
+            .img img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 3px solid map-get($map: $palette, $key:'white');;
+            }
+        }
+    }
+    .card:hover{
+        transform:  translateY(-15px);
+    }
+}
+
+.card .content .details .name{
+    font-size: 20px;
+    font-weight: 500;
+}
+.card .content .details .nivel{
+    font-size: 20px;
+    background: map-get($map: $palette, $key:'green');
+}
+.card .content .media-icons{
+    display: flex;
+    margin-top: 10px;
+}
+.card .content .media-icons a{
+   height: 35px;
+   width: 35px;
+   color: map-get($map: $palette, $key:'white');
+   background: map-get($map: $palette, $key:'green');
+   margin: 0 4px;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 33px;
+   font-size: 14px;
+   border:  2px solid transparent;
+   transition: all 0.4s ease;
+}
+.content .media-icons a:hover{
+    border-color: map-get($map: $palette, $key:'green');
+    color: map-get($map: $palette, $key:'green');
+    background: map-get($map: $palette, $key:'white');
+}
+.button{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    label{
+        height: 15px;
+        width: 15px;
+        border-radius: 20px;
+        background: map-get($map: $palette, $key:'white');
+        margin: 0 4px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+      }
+      label.active{
+        width: 35px;
+      }
+}
+
+  #one:checked ~ .button .one{
+    width: 35px;
+  }
+  #one:checked ~ .button .two{
+    width: 15px;
+  }
+  #two:checked ~ .button .one{
+    width: 15px;
+  }
+  #two:checked ~ .button .two{
+    width: 35px;
+  }
+
+  input[type="radio"]{
+      display: none;
+  }
+  .recetas-boton {
+    width: 10%;
+    height: 30px;
+    margin-top: 40px;
+}
