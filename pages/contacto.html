@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <title>Contacto</title>
     <meta name="description" content="Encuntra recetas faciles caseras para preparar con tu familia" >
     <meta name="keywords" content="recetas,recetario,recetas faciles, comida, postres, pollo">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -38,9 +39,9 @@
             <div class="contacto-direccion">
                 <h2 class="contacto-titulo">Dirección</h2>
                 <ul class="contacto-lista">
-                    <li><i class='bx bx-current-location bx-md'></i>Lacation</li>
-                    <li><i class='bx bx-envelope bx-md' ></i>Email</li>
-                    <li><i class='bx bx-phone-call bx-md'></i>Phone</li>
+                    <li><i class='bx bx-current-location bx-md'></i> 1352 Rufina Cir, Santa Fe, NM 87507</li>
+                    <li><i class='bx bx-envelope bx-md' ></i> easycook@gamil.com</li>
+                    <li><i class='bx bx-phone-call bx-md'></i> 55-23-56-77-11</li>
                 </ul>
             </div>
         </div>
@@ -50,18 +51,16 @@
                 <form action="/my-handling-form-page" class="contacto-formulario">
                     <ul>
                      <li>
-                       <label for="name">Nombre:</label>
-                       <input type="text" id="name" name="nombre" class="input">
+                       <input type="text" id="name" name="nombre" class="input" placeholder="Nombre">
                      </li>
                      <li>
-                       <label for="mail">Correo electrónico:</label>
-                       <input type="email" id="mail" name="user_mail" class="input">
+                       <input type="email" id="mail" name="user_mail" class="input" placeholder="Email">
                      </li>
                      <li>
-                       <label for="msg">Mensaje:</label>
-                       <textarea id="msg" name="user_message" class="textarea"></textarea>
+                       <textarea type="text" id="msg" name="user_message" class="textarea" placeholder="Comentarios ..."></textarea>
                      </li>
                     </ul>
+                    <button class="send-buton">Enviar</button>
                    </form>
             </div>
         </div>

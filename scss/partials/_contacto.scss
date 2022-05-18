@@ -1,0 +1,27 @@
+.contacto-formulario{
+    width: 60%;
+    margin: 30px auto;
+    background:map-get($map: $palette, $key:'white-black' );
+    box-shadow: 0 0 5px map-get($map: $palette, $key:'rgblack' );
+    padding: 30px;
+    .input{
+        display: block;
+    }
+    .input[type="text"], .input[type="email"],.textarea{
+        width: 100%;
+        padding: 12px 5px;
+        margin-bottom: 20px;
+        border: none;
+        outline: none;
+    }   
+    .send-buton{
+       display: block;
+       padding: 10px 0;
+       margin: 0 auto;
+       width: 150px ;
+       border-radius: 5px;
+       background:map-get($map: $palette, $key:'green' );
+       color: map-get($map: $palette, $key:'white');
+       font-weight: bold;
+    }
+}
